@@ -44,10 +44,12 @@ html, body {
     .modal-content, .btn-search {
       background-color: #F28805;
       color: #003257;
+      height: 40px;
   }
   .btn-login {
       background-color: #003257;
       color: #F28805;
+      height: 40px;
   }
     /* Welcome-text */
     .rectangle-div {
