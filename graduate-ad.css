@@ -31,3 +31,49 @@
     background-color: #e2cd10; /* Even darker shade of Yale blue */
     transform: translateY(0);
 }
+@media (max-width: 991.98px){
+  
+    .logo {
+      width: 80px;
+      height: 80px;
+    }
+    .underline {
+      width: 100%;
+    }
+    footer .col-md-6 {
+      text-align: center;
+    }
+    footer .col-md-6.text-md-end {
+      text-align: center;
+    }
+    nav,button, footer p, .nav-item{
+      font-size: 15px;
+    }
+    .d1, .logo-text{
+      display: none;
+    }
+    .rectangle-div {
+      top: 20px;
+      left: 63px;
+    }
+    .main-text {
+      top: 80px;
+      left:125px;
+      font-weight: 500;
+      height: 100px;
+      width: 100px;
+    }
+    .main-block {
+      margin-top: 40px;
+    }
+    .description{
+      font-size: 1.1em;
+    }
+    .box-2{
+      width: 100%;
+    }
+    .YSoA{
+      display: block;
+      font-size: 2.5em;
+    }
+  }
