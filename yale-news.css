@@ -1,0 +1,126 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    color: #003257;
+    margin: 0;
+    padding: 0;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-item {
+    background-color: #fff;
+    border: 1px solid #dfdddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+
+.news-item h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 10px 15px;
+}
+
+.news-item p {
+    margin: 0 15px 15px;
+    font-size: 1em;
+    color: #003257;
+}
+
+.news-item a {
+    display: block;
+    text-align: right;
+    padding: 10px 15px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+.headline {
+    grid-column: span 3; 
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.headline img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.headline h2 {
+    font-size: 2em;
+}
+
+.headline p {
+    font-size: 1.2em;
+    color: #003257;
+}
+.headnews {
+    grid-row: span 2;
+}
+#goTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 100;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #E2CD10;
+    color: #003257;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  #goTopBtn:hover {
+    background-color: #003257;
+    color: #E2CD10;
+  }
+
+@media (max-width: 768px) {
+    .headline {
+        grid-column: span 1;
+        flex-direction: column;
+    }
+
+    .headline img {
+        height: 200px;
+    }
+
+    .headline h2 {
+        font-size: 1.5em;
+    }
+
+    .headline p {
+        font-size: 1em;
+    }
+}

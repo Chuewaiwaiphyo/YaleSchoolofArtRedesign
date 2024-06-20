@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yale - Calendar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="yale-calendar.css">
+</head>
+<body>
+
+    <header class="container">
+        <div class="row justify-content-between py-3 align-items-center">
+          <div class="col d-flex flex-wrap">
+            <a class="navbar-brand" href="index.html">
+              <img class="logo" src="images/logo.png" alt="Yale Logo">
+            </a>
+            <h1 class="YSoA align-self-center">Yale School of Art</h1>
+            <svg class="col-lg-auto logo-text" viewBox="0 0 211 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.728 26.008L0.72 1.672H9.312L18.432 20.008L16.368 20.152L25.344 1.672H33.936L20.688 26.008V37H13.728V26.008ZM29.9198 37L45.8558 0.279998H46.2398L62.1758 37H54.1118L43.9358 11.176L48.9758 7.72L36.7838 37H29.9198ZM40.8158 24.232H51.4238L53.8718 30.088H38.6558L40.8158 24.232ZM67.3256 1.672H74.2856V30.28H90.8936V37H67.3256V1.672ZM98.0756 1.672H122.172V8.392H105.036V15.928H120.204V22.648H105.036V30.28H122.844V37H98.0756V1.672ZM23.424 58.216C22.08 57.48 20.704 56.872 19.296 56.392C17.92 55.912 16.624 55.672 15.408 55.672C13.904 55.672 12.72 55.976 11.856 56.584C10.992 57.192 10.56 58.104 10.56 59.32C10.56 60.152 10.88 60.904 11.52 61.576C12.192 62.216 13.04 62.792 14.064 63.304C15.12 63.816 16.208 64.28 17.328 64.696C18.352 65.08 19.36 65.544 20.352 66.088C21.376 66.6 22.288 67.256 23.088 68.056C23.888 68.824 24.528 69.8 25.008 70.984C25.488 72.136 25.728 73.56 25.728 75.256C25.728 77.048 25.264 78.712 24.336 80.248C23.408 81.784 22.048 83.032 20.256 83.992C18.464 84.92 16.256 85.384 13.632 85.384C12.288 85.384 10.912 85.256 9.504 85C8.128 84.712 6.768 84.296 5.424 83.752C4.08 83.176 2.784 82.456 1.536 81.592L4.608 76.168C5.44 76.776 6.336 77.32 7.296 77.8C8.288 78.248 9.28 78.6 10.272 78.856C11.264 79.112 12.176 79.24 13.008 79.24C13.84 79.24 14.672 79.128 15.504 78.904C16.368 78.648 17.072 78.232 17.616 77.656C18.192 77.08 18.48 76.28 18.48 75.256C18.48 74.552 18.24 73.912 17.76 73.336C17.312 72.76 16.688 72.232 15.888 71.752C15.12 71.272 14.272 70.856 13.344 70.504C12.256 70.088 11.136 69.608 9.984 69.064C8.832 68.52 7.744 67.864 6.72 67.096C5.728 66.296 4.912 65.32 4.272 64.168C3.664 62.984 3.36 61.544 3.36 59.848C3.36 57.8 3.808 56.024 4.704 54.52C5.632 53.016 6.928 51.832 8.592 50.968C10.256 50.072 12.176 49.576 14.352 49.48C17.2 49.48 19.504 49.816 21.264 50.488C23.056 51.16 24.656 51.96 26.064 52.888L23.424 58.216ZM59.0404 82.072C58.6564 82.392 57.9364 82.824 56.8804 83.368C55.8564 83.912 54.5924 84.392 53.0884 84.808C51.5844 85.224 49.9204 85.416 48.0964 85.384C45.3124 85.32 42.8164 84.824 40.6084 83.896C38.4324 82.936 36.5764 81.64 35.0404 80.008C33.5364 78.376 32.3844 76.504 31.5844 74.392C30.7844 72.28 30.3844 70.024 30.3844 67.624C30.3844 64.936 30.7844 62.472 31.5844 60.232C32.4164 57.992 33.5844 56.056 35.0884 54.424C36.6244 52.792 38.4484 51.528 40.5604 50.632C42.6724 49.736 45.0084 49.288 47.5684 49.288C49.9364 49.288 52.0324 49.608 53.8564 50.248C55.6804 50.888 57.1684 51.576 58.3204 52.312L55.5844 58.888C54.7844 58.28 53.7124 57.656 52.3684 57.016C51.0564 56.344 49.5364 56.008 47.8084 56.008C46.4644 56.008 45.1684 56.296 43.9204 56.872C42.7044 57.416 41.6164 58.2 40.6564 59.224C39.7284 60.248 38.9924 61.448 38.4484 62.824C37.9044 64.168 37.6324 65.64 37.6324 67.24C37.6324 68.936 37.8724 70.488 38.3524 71.896C38.8644 73.304 39.5844 74.52 40.5124 75.544C41.4404 76.536 42.5444 77.304 43.8244 77.848C45.1364 78.392 46.6084 78.664 48.2404 78.664C50.1284 78.664 51.7444 78.36 53.0884 77.752C54.4324 77.144 55.4564 76.504 56.1604 75.832L59.0404 82.072ZM95.7251 49.672V85H88.7651V70.648H72.9731V85H66.0131V49.672H72.9731V63.928H88.7651V49.672H95.7251ZM102.666 67.384C102.666 64.952 103.13 62.648 104.058 60.472C104.986 58.296 106.266 56.376 107.898 54.712C109.562 53.016 111.482 51.688 113.658 50.728C115.834 49.768 118.17 49.288 120.666 49.288C123.13 49.288 125.45 49.768 127.626 50.728C129.802 51.688 131.722 53.016 133.386 54.712C135.082 56.376 136.394 58.296 137.322 60.472C138.282 62.648 138.762 64.952 138.762 67.384C138.762 69.88 138.282 72.216 137.322 74.392C136.394 76.568 135.082 78.488 133.386 80.152C131.722 81.784 129.802 83.064 127.626 83.992C125.45 84.92 123.13 85.384 120.666 85.384C118.17 85.384 115.834 84.92 113.658 83.992C111.482 83.064 109.562 81.784 107.898 80.152C106.266 78.488 104.986 76.568 104.058 74.392C103.13 72.216 102.666 69.88 102.666 67.384ZM109.866 67.384C109.866 68.952 110.138 70.424 110.682 71.8C111.258 73.144 112.042 74.344 113.034 75.4C114.058 76.424 115.226 77.224 116.538 77.8C117.882 78.376 119.338 78.664 120.906 78.664C122.41 78.664 123.802 78.376 125.082 77.8C126.394 77.224 127.53 76.424 128.49 75.4C129.45 74.344 130.202 73.144 130.746 71.8C131.29 70.424 131.562 68.952 131.562 67.384C131.562 65.784 131.274 64.296 130.698 62.92C130.154 61.544 129.386 60.344 128.394 59.32C127.434 58.264 126.298 57.448 124.986 56.872C123.674 56.296 122.25 56.008 120.714 56.008C119.178 56.008 117.754 56.296 116.442 56.872C115.13 57.448 113.978 58.264 112.986 59.32C111.994 60.344 111.226 61.544 110.682 62.92C110.138 64.296 109.866 65.784 109.866 67.384ZM143.541 67.384C143.541 64.952 144.005 62.648 144.933 60.472C145.861 58.296 147.141 56.376 148.773 54.712C150.437 53.016 152.357 51.688 154.533 50.728C156.709 49.768 159.045 49.288 161.541 49.288C164.005 49.288 166.325 49.768 168.501 50.728C170.677 51.688 172.597 53.016 174.261 54.712C175.957 56.376 177.269 58.296 178.197 60.472C179.157 62.648 179.637 64.952 179.637 67.384C179.637 69.88 179.157 72.216 178.197 74.392C177.269 76.568 175.957 78.488 174.261 80.152C172.597 81.784 170.677 83.064 168.501 83.992C166.325 84.92 164.005 85.384 161.541 85.384C159.045 85.384 156.709 84.92 154.533 83.992C152.357 83.064 150.437 81.784 148.773 80.152C147.141 78.488 145.861 76.568 144.933 74.392C144.005 72.216 143.541 69.88 143.541 67.384ZM150.741 67.384C150.741 68.952 151.013 70.424 151.557 71.8C152.133 73.144 152.917 74.344 153.909 75.4C154.933 76.424 156.101 77.224 157.413 77.8C158.757 78.376 160.213 78.664 161.781 78.664C163.285 78.664 164.677 78.376 165.957 77.8C167.269 77.224 168.405 76.424 169.365 75.4C170.325 74.344 171.077 73.144 171.621 71.8C172.165 70.424 172.437 68.952 172.437 67.384C172.437 65.784 172.149 64.296 171.573 62.92C171.029 61.544 170.261 60.344 169.269 59.32C168.309 58.264 167.173 57.448 165.861 56.872C164.549 56.296 163.125 56.008 161.589 56.008C160.053 56.008 158.629 56.296 157.317 56.872C156.005 57.448 154.853 58.264 153.861 59.32C152.869 60.344 152.101 61.544 151.557 62.92C151.013 64.296 150.741 65.784 150.741 67.384ZM186.576 49.672H193.536V78.28H210.144V85H186.576V49.672ZM2.4 115.384C2.4 112.952 2.864 110.648 3.792 108.472C4.72 106.296 6 104.376 7.632 102.712C9.296 101.016 11.216 99.688 13.392 98.728C15.568 97.768 17.904 97.288 20.4 97.288C22.864 97.288 25.184 97.768 27.36 98.728C29.536 99.688 31.456 101.016 33.12 102.712C34.816 104.376 36.128 106.296 37.056 108.472C38.016 110.648 38.496 112.952 38.496 115.384C38.496 117.88 38.016 120.216 37.056 122.392C36.128 124.568 34.816 126.488 33.12 128.152C31.456 129.784 29.536 131.064 27.36 131.992C25.184 132.92 22.864 133.384 20.4 133.384C17.904 133.384 15.568 132.92 13.392 131.992C11.216 131.064 9.296 129.784 7.632 128.152C6 126.488 4.72 124.568 3.792 122.392C2.864 120.216 2.4 117.88 2.4 115.384ZM9.6 115.384C9.6 116.952 9.872 118.424 10.416 119.8C10.992 121.144 11.776 122.344 12.768 123.4C13.792 124.424 14.96 125.224 16.272 125.8C17.616 126.376 19.072 126.664 20.64 126.664C22.144 126.664 23.536 126.376 24.816 125.8C26.128 125.224 27.264 124.424 28.224 123.4C29.184 122.344 29.936 121.144 30.48 119.8C31.024 118.424 31.296 116.952 31.296 115.384C31.296 113.784 31.008 112.296 30.432 110.92C29.888 109.544 29.12 108.344 28.128 107.32C27.168 106.264 26.032 105.448 24.72 104.872C23.408 104.296 21.984 104.008 20.448 104.008C18.912 104.008 17.488 104.296 16.176 104.872C14.864 105.448 13.712 106.264 12.72 107.32C11.728 108.344 10.96 109.544 10.416 110.92C9.872 112.296 9.6 113.784 9.6 115.384ZM45.435 97.672H67.515V104.392H52.395V112.408H65.499V119.128H52.395V133H45.435V97.672ZM85.8416 133L101.778 96.28H102.162L118.098 133H110.034L99.8576 107.176L104.898 103.72L92.7056 133H85.8416ZM96.7376 120.232H107.346L109.794 126.088H94.5776L96.7376 120.232ZM133.952 97.672C136.16 97.672 138.128 97.96 139.856 98.536C141.584 99.08 143.024 99.88 144.176 100.936C145.36 101.96 146.256 103.208 146.864 104.68C147.472 106.12 147.776 107.752 147.776 109.576C147.776 111.016 147.552 112.456 147.104 113.896C146.688 115.336 145.984 116.648 144.992 117.832C144.032 119.016 142.752 119.976 141.152 120.712C139.552 121.416 137.568 121.768 135.2 121.768H130.208V133H123.248V97.672H133.952ZM135.152 115.048C136.208 115.048 137.088 114.872 137.792 114.52C138.496 114.168 139.04 113.72 139.424 113.176C139.84 112.632 140.128 112.072 140.288 111.496C140.48 110.888 140.576 110.328 140.576 109.816C140.576 109.432 140.512 108.952 140.384 108.376C140.288 107.768 140.064 107.16 139.712 106.552C139.36 105.944 138.816 105.432 138.08 105.016C137.376 104.6 136.416 104.392 135.2 104.392H130.208V115.048H135.152ZM141.68 119.368L150.416 133H142.304L133.376 119.56L141.68 119.368ZM153.051 97.672H176.859V104.392H168.267V133H161.307V104.392H153.051V97.672Z" fill="#003257"/>
+            </svg>
+          </div>
+          <div class="col-md-auto d-flex flex-wrap box-2 ">
+            <button type="button" class="btn btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+              Login
+            </button>
+              <form class="col-lg-auto  mb-lg-0" role="search">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+              </form>
+              <button type="button" class="btn btn-search"><img src="https://www.svgrepo.com/show/55048/search.svg" width="20px" height="20px" alt=""></button> 
+              <div class="dropdown">
+                <button class="btn btn-login dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  INFO FOR
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Visitors</a></li>
+                    <li><a class="dropdown-item" href="#">Current Students</a></li>
+                    <li><a class="dropdown-item" href="#">General Audience</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        <nav class="container navbar navbar-expand-lg py-0">  
+          <div class="d-flex flex-wrap offset-md-6 justify-content-end">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div  class="collapse navbar-collapse" id="navbarNav">
+                  <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">History</a></li>
+                        <li><a class="dropdown-item" href="#">Mission Statement</a></li>
+                        <li><a class="dropdown-item" href="#">People</a>
+                          <ul>
+                            <li><a class="dropdown-item" href="#">Faculty & Staff</a></li>
+                            <li><a class="dropdown-item" href="#">Current Students</a></li>
+                            <li><a class="dropdown-item" href="#">Alumni</a></li>
+                            <li><a class="dropdown-item" href="#">Friends of the School</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Admissions
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="graduate-ad.html">Graduate Admission</a><ul><li><a class="dropdown-item" href="#">Portfolio Requirements</a></li></ul></li>
+                        <li><a class="dropdown-item" href="#">Financial Aid</a><ul><li><a class="dropdown-item" href="#">Tuition, Fees, <br> & Cost of Attendance</a></li></ul></li>
+                        <li><a class="dropdown-item" href="#">Graduate Study Area</a></li>
+                        <li><a class="dropdown-item" href="#">Courses</a></li>
+                        <li><a class="dropdown-item" href="#">Housing</a></li>
+                        <li><a class="dropdown-item" href="#">Brochures & Documentation</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        YSoA Students
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Student Resources</a>
+                          <ul>
+                            <li><a class="dropdown-item" href="#">Academic Regulations</a></li>
+                            <li><a class="dropdown-item" href="#">Community Bulletin Board</a></li>
+                            <li><a class="dropdown-item" href="#">Yale University Resources & Services</a></li>
+                            <li><a class="dropdown-item" href="#">Resources on Sexual Misconduct</a></li>
+                            <li><a class="dropdown-item" href="#">Policy Statements</a></li>
+                          </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Facilities</a></li>
+                        <li><a class="dropdown-item" href="#">Undergraduate Studies in Art</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        News & Events
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="yale-news.html">News</a></li>
+                        <li><a class="dropdown-item" href="#">Events</a></li>
+                        <li><a class="dropdown-item" href="#">Exhibitions</a></li>
+                        <li><a class="dropdown-item" href="#">Open Studios</a></li>
+                        <li><a class="dropdown-item" href="#">Publication</a></li>
+                        <li><a class="dropdown-item" href="yale-calendar.html">Calendar</a></li>
+                      </ul>
+                    </div>
+              </div>
+          </div>
+        </nav> 
+    </header>  
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-login">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>  
+    <main>
+        <div class="main-block offset-md-1">
+            <div class="rectangle-container">
+              <div class="rectangle-div"></div>
+              <h1 class="main-text">Calendars</h1>
+            </div>
+          </div>
+          <div class="container">
+            <p class="description text-end">Welcome to the School of Art’s public events calendar, initiated in the summer of 2020. <br>For events open to the Yale community, view our Yale Calendar listings.</p>
+              <div class="underline offset-md-5"></div>
+          </div>
+        
+        <div class="category-buttons">
+            <button class="academic" onclick="changeCategory('academic')"><div id="blue-heading">ACADEMIC CALENDAR</div><div id="blue-para">For Current Students</div></button>
+            <button class="SoA" onclick="changeCategory('SoA')"><div id="white-heading">SoA IN THE WORLD</div><div id="white-para">Archive Of The Alum Exhibition, Events, Publication, Etc.</div></button>
+            <button class="public" onclick="changeCategory('public')"><div id="white-heading">PUBLIC CALENDAR</div><div id="white-para">Containing Those Events Open To The Public</div></button>
+            <button class="community" onclick="changeCategory('community')"><div id="blue-heading">COMMUNITY CALENDAR</div><div id="blue-para">All Events Open To School Of Art Staff, Faculty, Students</div></button>
+        </div>
+    
+        <h2 id="calendar-header">Select a calendar</h2>
+    
+        <div id="calendar">
+            <div id="month" class="header">
+                <span class="prev" onclick="changeMonth(-1)">&#10094;</span>
+                <span class="next" onclick="changeMonth(1)">&#10095;</span>
+                <span id="monthYear"></span>
+            </div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days" id="days"></div>
+        </div>
+        <div class="container" id="eventDetails" style="display:none;">
+            <h2 id="eventTitle"></h2>
+            <p id="eventDate"></p>
+            <p id="eventDescription"></p>
+            <button class="btn btn-login align-self-center" onclick="closeEventDetails()">Back to Calendar</button>
+        </div>
+    </main>
+    <div class="orange-underline"></div>
+    <!--Footer-->
+     <div class="container">
+       <footer class="d-flex flex-wrap justify-content-between align-items-end py-3 my-4">
+         <div class="col mb-3">
+           <h4>© 2020 Yale School of Art</h4>
+           <p>1156 Chapel Street, POB 208339 <br>New Haven, Connecticut <br>06520-8339</p>
+         </div>
+     
+         <div class="col mb-3 offset-md-2">
+           <svg width="158" height="32" viewBox="0 0 158 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M92.1399 9.50993V21.5258C92.1399 25.6734 88.7775 29.0358 84.6299 29.0358H72.6141C68.4664 29.0358 65.1041 25.6734 65.1041 21.5258V9.50993C65.1041 5.36232 68.4664 2 72.6141 2H84.6299C88.7775 2 92.1399 5.36232 92.1399 9.50993Z" stroke="#DE0000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+             <path d="M77.12 29.0356C77.12 24.5296 77.12 20.0237 77.12 15.5177C77.12 12.2321 77.871 9.50977 83.1279 9.50977" stroke="#DE0000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+             <path d="M74.116 17.02H77.1199H83.1279" stroke="#DE0000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+             <path d="M15.5178 21.5257C18.8359 21.5257 21.5258 18.8357 21.5258 15.5177C21.5258 12.1996 18.8359 9.50977 15.5178 9.50977C12.1997 9.50977 9.50989 12.1996 9.50989 15.5177C9.50989 18.8357 12.1997 21.5257 15.5178 21.5257Z" stroke="#DE0000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+             <path d="M2 21.5258V9.50993C2 5.36232 5.36232 2 9.50993 2H21.5258C25.6734 2 29.0358 5.36232 29.0358 9.50993V21.5258C29.0358 25.6734 25.6734 29.0358 21.5258 29.0358H9.50993C5.36232 29.0358 2 25.6734 2 21.5258Z" stroke="#DE0000" stroke-width="4"/>
+             <path d="M23.7788 7.2718L23.794 7.25488" stroke="#DE0000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+             <path d="M144.43 15.5976L139.698 18.3012V12.894L144.43 15.5976Z" fill="black" stroke="#DE0000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+             <path d="M128.208 16.5542V14.6413C128.208 10.7274 128.208 8.77048 129.432 7.51133C130.656 6.25218 132.583 6.19767 136.438 6.08866C138.264 6.03701 140.129 6 141.726 6C143.323 6 145.188 6.03701 147.015 6.08866C150.869 6.19767 152.796 6.25218 154.02 7.51133C155.244 8.77048 155.244 10.7274 155.244 14.6413V16.5542C155.244 20.468 155.244 22.425 154.02 23.6841C152.796 24.9433 150.869 24.9978 147.015 25.1068C145.188 25.1585 143.323 25.1955 141.726 25.1955C140.129 25.1955 138.264 25.1585 136.437 25.1068C132.583 24.9978 130.656 24.9433 129.432 23.6841C128.208 22.425 128.208 20.468 128.208 16.5542Z" stroke="#DE0000" stroke-width="4"/>
+             </svg> 
+         </div>
+     
+         <div class="col mb-3 offset-md-1">
+           <ul class="nav flex-column">
+             <li class="nav-item"><a href="#" class="nav-link p-0">Support the School</a></li>
+             <li class="nav-item"><a href="#" class="nav-link p-0">Contact</a></li>
+             <li class="nav-item"><a href="#" class="nav-link p-0">Visiting</a></li>
+             <li class="nav-item"><a href="https://art.yale.edu/sitemap.xml" class="nav-link p-0">Sitemap</a></li>
+             <li class="nav-item "><a href="#" class="nav-link p-0">Accessibility at Yale</a></li>
+           </ul>
+         </div>
+       </footer>
+     </div>
+    <script src="yale-calendar.js"></script>
+</body>
+</html>
